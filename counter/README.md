@@ -1,16 +1,38 @@
-# counter
+# Counter App (Flutter with BLoC)
 
-A new Flutter project.
+![Flutter version](https://img.shields.io/badge/flutter-v3.10.6-blue.svg)
+![Dart version](https://img.shields.io/badge/dart-v3.0.6-green.svg)
 
-## Getting Started
+The **Counter** app is a simple Flutter application that allows you to increase or decrease a number using the BLoC (Business Logic Component) architecture with the `flutter_bloc` package for state management.
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+![Pic1](https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png)
+![Pic2](https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Increment the number.
+- Decrement the number.
+- View the current number.
+
+## Prerequisites
+
+Before running the app, make sure you have the following installed:
+
+- Flutter SDK
+- Dart SDK
+- Android SDK or Xcode for iOS development
+
+## Dependencies
+- `bloc`, `flutter_bloc`: For state management
+
+## Project Structure
+
+Explain the structure of the project's folders and important files:
+
+- `lib/`: Contains the Dart source code of the app.
+- `lib/features/`: Contains the features of the app.
+- `lib/features/blocs/`: Contains the BLoC classes for managing state.
+- `lib/features/views/`: Contains the UI components/widgets used in the app.
+- `lib/main.dart`: The entry point of the application.
