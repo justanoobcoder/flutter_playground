@@ -25,7 +25,6 @@ class PostListBloc extends Bloc<PostListEvent, PostListState> {
       PostListFetched event, Emitter<PostListState> emit) async {
     if (state.hasReachMax) return;
     try {
-      print('--fetch--');
       List<Post> posts =
           await _repository.getPosts(event.pageIndex, event.pageSize);
       if (state.status == PostListStatus.initial) {
