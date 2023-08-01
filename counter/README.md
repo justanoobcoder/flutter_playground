@@ -6,9 +6,10 @@
 The **Counter** app is a simple Flutter application that allows you to increase or decrease a number using the BLoC (Business Logic Component) architecture with the `flutter_bloc` package for state management.
 
 ## Screenshots
-
-<img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png" width=30% height=30%>
-<img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_2.png" width=30% height=30%>
+<p float="left">
+    <img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png" width=30% height=30%>
+    <img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_2.png" width=30% height=30%>
+</p>
 
 ## Features
 
