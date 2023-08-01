@@ -7,9 +7,8 @@ The **Counter** app is a simple Flutter application that allows you to increase 
 
 ## Screenshots
 
-![Pic1](https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png)
-![Pic2](https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_2.png)
-<img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png" width=30% height=30%>
+<img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_2.png" width=30% height=30%>
 
 ## Features
 
