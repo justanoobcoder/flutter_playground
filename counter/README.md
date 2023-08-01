@@ -9,6 +9,7 @@ The **Counter** app is a simple Flutter application that allows you to increase 
 
 ![Pic1](https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png)
 ![Pic2](https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_2.png)
+<img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/counter/images/Screenshot_1.png" width=50% height=50%>
 
 ## Features
 
