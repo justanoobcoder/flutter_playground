@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:infinite_scroll/common/constants.dart';
 import 'package:infinite_scroll/features/post/domain/models/post.dart';
 import 'package:infinite_scroll/features/post/domain/repositories/post_repository.dart';
 
@@ -83,7 +84,7 @@ class PostRepositoryImpl implements PostRepository {
 
     List<Post> posts = [];
 
-    for (int i = 0; i < 50; ++i) {
+    for (int i = 0; i < AppConstants.postCount; ++i) {
       String name = names[Random().nextInt(names.length)];
       String content = contents[Random().nextInt(contents.length)];
       String avatar = avatars[Random().nextInt(avatars.length)];

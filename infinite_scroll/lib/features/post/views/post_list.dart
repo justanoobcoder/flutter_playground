@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:infinite_scroll/common/constants.dart';
 import 'package:infinite_scroll/features/post/blocs/post_list_bloc.dart';
 import 'package:infinite_scroll/features/post/views/post_item.dart';
 
@@ -12,12 +13,13 @@ class PostList extends StatefulWidget {
 
 class _PostListState extends State<PostList> {
   int pageIndex = 0;
-  final pageSize = 10;
   final ScrollController _scrollController = ScrollController();
 
   @override
   void initState() {
     super.initState();
+    context.read<PostListBloc>().add(
+        PostListFetched(pageIndex: pageIndex, pageSize: AppConstants.pageSize));
     _scrollController.addListener(_onScroll);
   }
 
@@ -63,9 +65,8 @@ class _PostListState extends State<PostList> {
     final maxScroll = _scrollController.position.maxScrollExtent;
     final currentScroll = _scrollController.position.pixels;
     if (currentScroll == maxScroll) {
-      context
-          .read<PostListBloc>()
-          .add(PostListFetched(pageIndex: ++pageIndex, pageSize: pageSize));
+      context.read<PostListBloc>().add(PostListFetched(
+          pageIndex: ++pageIndex, pageSize: AppConstants.pageSize));
     }
   }
 }

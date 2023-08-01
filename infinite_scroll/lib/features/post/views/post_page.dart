@@ -18,8 +18,7 @@ class PostPage extends StatelessWidget {
       ),
       body: BlocProvider(
         create: (_) =>
-            PostListBloc(postRepository: context.read<PostRepository>())
-              ..add(PostListFetched(pageIndex: 0, pageSize: 10)),
+            PostListBloc(postRepository: context.read<PostRepository>()),
         child: const PostList(),
       ),
     );
