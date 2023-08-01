@@ -1,16 +1,45 @@
-# infinite_scroll
+# Infinite Scroll App (Flutter with BLoC)
 
-A new Flutter project.
+![Flutter version](https://img.shields.io/badge/flutter-v3.10.6-blue.svg)
+![Dart version](https://img.shields.io/badge/dart-v3.0.6-green.svg)
 
-## Getting Started
+The **Infinite Scroll** app is a simple Flutter application that show a list of posts which will load more when pull up using the BLoC (Business Logic Component) architecture with the `flutter_bloc` package for state management.
 
-This project is a starting point for a Flutter application.
+## Screenshots
+<p float="left">
+    <img src="https://raw.githubusercontent.com/justanoobcoder/flutter_playground/main/infinite_scroll/images/Screenshot_1.png" width=30% height=30%>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Show list of facebook-like posts.
+- Load more posts when pull up the list
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Prerequisites
+
+Before running the app, make sure you have the following installed:
+
+- Internet required (to load avatar images)
+- Flutter SDK
+- Dart SDK
+- Android SDK or Xcode for iOS development
+
+## Dependencies
+
+- `bloc`, `flutter_bloc`: For state management.
+- `bloc_concurrency`: For custom event transformers.
+- `freezed`: Code generator for data classes.
+- `intl`: For formatting data.
+
+## Project Structure
+
+- `lib/`: Contains the Dart source code of the app.
+- `lib/common/`: Contains common things that are used globally.
+- `lib/extensions/`: Contains custom extension methods.
+- `lib/features/`: Contains the features of the app.
+- `lib/features/../domain/models/`: Contains model classes (data class).
+- `lib/features/../domain/repositories/`: Contains abstract repositories.
+- `lib/features/../data/repositories/`: Contains implementations of domain repository.
+- `lib/features/../blocs/`: Contains the BLoC classes for managing state.
+- `lib/features/../views/`: Contains the UI components/widgets used in the app.
+- `lib/main.dart`: The entry point of the application.
