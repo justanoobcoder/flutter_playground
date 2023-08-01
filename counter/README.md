@@ -34,6 +34,6 @@ Explain the structure of the project's folders and important files:
 
 - `lib/`: Contains the Dart source code of the app.
 - `lib/features/`: Contains the features of the app.
-- `lib/features/blocs/`: Contains the BLoC classes for managing state.
-- `lib/features/views/`: Contains the UI components/widgets used in the app.
+- `lib/features/../cubits/`: Contains the Cubit classes for managing state.
+- `lib/features/../views/`: Contains the UI components/widgets used in the app.
 - `lib/main.dart`: The entry point of the application.
